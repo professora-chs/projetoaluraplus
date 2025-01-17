@@ -9,12 +9,18 @@
 
     --fonte-principal: "Inter", serif;
     --fonte-size-principal: 16px;
+    
+
+
+
 }
 
-* {
+
+*{
     margin: 0;
     padding: 0;
 }
+
 
 body {
     background-color: var(--cor-de-fundo);
@@ -22,15 +28,18 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+   
+    
+    
+
 }
 
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    /* Ajuste de layout para telas menores */
-}
 
+}
 .principal {
     background-image: url("/assents/Background.png");
     background-repeat: no-repeat;
@@ -39,21 +48,29 @@ body {
     text-align: center;
 }
 
+
 .container__caixa {
     margin: 0 6em;
+    
+
 }
 
-.container__titulo {
+.container__titulo{
     font-size: 28px;
     font-weight: 700;
-    max-width: 588em; 
-    line-height: 6.3em;
+    max-width: 588em; /* Ajuste o valor até obter três linhas */
+    line-height: 6.3em; /* Espaçamento entre linhas */
     text-align: center;
+   
+
+
 }
 
 .container__img {
-    margin: 1em 0em 2em 0em;
+    margin: 1em 0em 2em 0em; 
+
 }
+
 
 .container__botao {
     background-color: var(--botao-azul);
@@ -65,6 +82,9 @@ body {
     margin-bottom: 1em;
     font-size: var(--fonte-size-principal);
     font-weight: 400;
+ 
+
+
 }
 
 .botao__secundario {
@@ -80,15 +100,22 @@ body {
     font-size: 12px;
     color: var(--branco-principal);
     margin-top: 1em;
+    
+
+
+
 }
 
 .container__secundario {
     width: 80%;
+
 }
 
 .secundario {
     align-items: center;
     margin: 0 10em;
+
+
 }
 
 .descricao__titulo {
@@ -96,21 +123,26 @@ body {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 0.1em;
+
 }
 
 .descricao__texto {
     font-family: var(--fonte-principal);
     font-size: var(--fonte-size-principal);
     color: var(--cinza-secundario);
+    
+
 }
 
 .secundario__botao {
     display: inline-block;
     margin-top: 1em;
+
 }
 
 .container__descricao {
     padding: 2em;
+
 }
 
 .dispositivos__lista {
@@ -118,10 +150,12 @@ body {
     justify-content: center;
     list-style-type: none;
     margin: 5em 0;
+   
 }
 
 .dispositivos {
     text-align: center;
+
 }
 
 .dispositivos__titulo {
@@ -133,25 +167,32 @@ body {
 .dispositivos__lista h3 {
     font-size: 32px;
     color: var(--branco-principal);
+   
 }
 
 .rodape__logo {
     display: flex;
-    justify-content: center;
+   justify-content: center;
+
 }
 
 .rodape__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin-top: 1em;
+   margin-top: 1em;
+
+
 }
 
-.lista__link a {
+
+.lista__link a{
     text-decoration: none;
     color: var(--branco-principal);
     margin-left: 1em;
 }
+
+
 
 .rodape__texto {
     margin: 1em 0;
@@ -165,89 +206,17 @@ body {
 }
 
 .rodape__logo {
-    margin: auto;
+   margin: auto;
+
 }
 
 .lista__link a:hover {
-    color: var(--botao-azul);
+    color: var(--botao-azul)
+
 }
 
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
-}
 
-/* Responsividade para telas pequenas (como celulares) */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr; /* Coluna única */
-        padding: 1em;
-    }
-
-    .container__caixa {
-        margin: 0;
-    }
-
-    .container__titulo {
-        font-size: 22px;
-        max-width: 100%;
-    }
-
-    .container__img {
-        width: 100%;
-        margin: 1em 0;
-    }
-
-    .secundario {
-        margin: 0 2em;
-    }
-
-    .descricao__titulo {
-        font-size: 36px;
-    }
-
-    .descricao__texto,
-    .rodape__texto {
-        font-size: 14px;
-    }
-
-    .dispositivos__titulo {
-        font-size: 36px;
-    }
-
-    .dispositivos__lista h3 {
-        font-size: 24px;
-    }
-
-    .rodape__logo {
-        margin: 1em 0;
-    }
-
-    .rodape__lista {
-        flex-direction: column;
-    }
-
-    .lista__link a {
-        margin-left: 0;
-        margin-bottom: 1em;
-    }
-}
-
-/* Responsividade para telas de tablet */
-@media (max-width: 1024px) {
-    .container {
-        grid-template-columns: 1fr 1fr; /* 2 colunas */
-    }
-
-    .container__caixa {
-        margin: 0 2em;
-    }
-
-    .secundario {
-        margin: 0 5em;
-    }
-
-    .dispositivos__lista {
-        margin: 3em 0;
-    }
 }
